@@ -1,0 +1,237 @@
+#SACContainer{
+    width: calc(100% - 10px);
+    float: left;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #337ab7;
+    border-style: dashed;
+    margin: 5px;
+    overflow-y: hidden;
+    position: absolute;
+    height: 330px;
+    overflow: hidden;
+}
+#PLine{position: absolute;
+    height: 281px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px;    z-index: 0;   
+}
+
+#AttrInput {           position: absolute;
+    height: 281px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px;    z-index: 1;
+}
+#AttrInput div.attrinput{
+    transition-duration: 0.5s;
+	width: 250px;
+    height: 170px;
+    background: rgb(242, 242, 242);
+    position: absolute;
+}
+#linesvg{
+        width: 100%;
+    top: 60px;
+    position: absolute;
+    left: 0;
+    height: 199px;
+}
+
+#AttrInput .textrect{
+   transition-duration: 0.6s;
+   fill: #b2bac1;
+}
+
+#AttrInput .textrect:hover{
+   fill: rgb(91,155,213);
+}
+#AttrInput .textrectlight{
+   transition-duration: 0.6s;
+   fill: #cccccc
+}
+#AttrInput .textrectlightactive{
+   fill:#92bade
+   }
+
+#AttrInput .textrectlight:hover{
+   fill: rgb(91,155,213);
+}
+
+#AttrInput .textinput{
+pointer-events: none;
+    fill:white   ;
+    font-size:13px
+}
+
+#AttrInput .checkbox{
+    fill: #b2bac1;
+    stroke: white;
+    rx: 2;
+    width:12px;
+    height:12px;
+    cursor:pointer
+}
+#AttrInput .checkbox:hover{
+    fill:  rgb(91,155,213);
+}
+#AttrInput .active{
+    fill:  rgb(91,155,213);
+    
+}
+#AttrInput .boxrect{    
+    fill: white;
+    stroke: #94999e;
+    stroke-width: 2px;
+}
+#AttrInput .boxline{
+    stroke:#94999e;
+    stroke-width: 2px;
+    pointer-events:none
+}
+
+#PLine .Parallel_line{
+    transition-duration: 0.6s;
+    fill: none;
+    opacity: 0.2;
+   stroke-width: 2px;
+}
+#PLine .Parallel_lineback{
+   stroke:black;
+    opacity: 0.1;
+     stroke-width: 3px;
+}
+
+#PLine .Parallel_change{
+    transition-duration: 0.6s;
+    fill: none;
+    opacity: 0.8;
+   stroke-width: 2px;
+}
+
+
+
+
+#AttrInput div.label{
+    cursor: default;
+    color: #f7f7f7;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px;
+    display: block;
+    background: rgba(91, 155, 213, 1);
+    border-radius: 0;
+    transition-duration: 0.6s;
+}
+
+
+/*input */
+.attrinput .ranksvg{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 75px;
+    left: -15px;
+}
+
+.attrinput .checkinput{
+	float: left;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    padding: 1px 4px;
+    border: 1px dotted #f1f1f1;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.attrinput .checkinput .checkmark{
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.attrinput .valueRange{
+    float: left;
+    margin: 3px 12px;
+    width: 72px;
+    background: #5b9bd5;
+    color: #f7f7f7;
+    font-size: 13px;
+    line-height: 23px;
+    transition-duration: 0.6s;
+}
+
+.attrinput .slider{
+    height: 23px;
+    width: 140px;
+    margin-top: 3px;
+}
+
+.attrinput .StepLabel{
+    float: left;
+    margin: 3px 12px;
+    width: 72px;
+    background: #5b9bd5;
+    color: #f7f7f7;
+    font-size: 13px;
+    line-height: 23px;
+    transition-duration: 0.6s;
+}
+.attrinput .textinput{    
+	float: left;
+    margin: 3px 12px;
+    width: 47px;
+    height: 23px;
+    background: #5b9bd5;
+    color: #f7f7f7;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    border: 0;
+    transition-duration: 0.6s;
+}
+
+
+#CVSP-svg{    position: absolute;
+    height: 400px;
+    width: calc(50% - 10px);
+    left: 0;
+    z-index: 10;
+    padding: 10px 10px 10px 25px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #337ab7;
+    border-style: dashed;
+    margin: 5px;
+    bottom: 0;
+}
+
+#CVSP-svg  .dot{ 
+    fill: rgb(91, 155, 213);
+    stroke: rgb(91, 155, 213);
+    stroke-width: 1;
+    cursor: pointer;
+    r: 6;
+    transition-duration: 0.4s;
+    opacity: 0.6;
+}
+
+#CVSP-svg  .dotselect{    
+    stroke-width: 1;
+    r: 6;
+    opacity: 0.9;
+    stroke: rgb(56, 56, 56);
+}
+#CVSP-svg  .dotnotselect{    
+    opacity: 0.01;
+    pointer-events: none;
+}

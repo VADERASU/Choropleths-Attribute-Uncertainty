@@ -1,0 +1,137 @@
+#mod{
+    width: 300px;
+    right: 0;
+    height: 480px;
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    transition-duration:0.5s;
+}
+#KmeansParameterOption{
+    transition-duration: 0.6s;
+    padding: 0 5px;
+    position: absolute;
+    width: 300px;
+    right: 0;
+    background: #ffffff;
+    top: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border-radius: 1px;
+    left: calc(50% - 150px);
+    height: 515px;
+}
+.parameterTitle{
+	float: left;
+    color: #777;
+    padding: 6px 0 6px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: default;
+    width: 100px;
+    text-align: left;
+}
+
+#parameterOption{
+	float:right;
+    transition-duration: 0.6s;
+	height: 50px;
+    padding: 16px;
+    cursor: pointer;
+    background: #337ab7;
+    color: white;
+}
+#logoContainer .normal{
+	background:transparent;
+}
+
+#parameterOption:hover{
+	background:#337ab7;
+	color:white;
+}
+
+#Loading_uncertainty{
+    float:right;
+    transition-duration: 0.6s;
+    height: 50px;
+    padding: 16px;
+    cursor: pointer;
+    background: #337ab7;
+    color: white;
+}
+#Loading_uncertainty:hover{
+    background:#337ab7;
+    color:white;
+}
+
+
+#datasource:hover{
+        background: red;
+}
+
+
+#regiondatadetail{
+    display: block;
+    height: 184px;
+    padding: 5px;
+    width: 300px;
+    position: absolute;
+    z-index: 4;
+    left: 8000px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.54);
+    height: 200px;
+        pointer-events: none;
+}
+#regiondatadetail .attrDe{
+
+    height: 23px;
+    margin: 2px;
+}
+#regiondatadetail .name{
+        padding: 3px 10px;
+    float: left;
+    width: 145px;
+    font-size: 12px;
+    text-align: right;
+    line-height: 16px;
+    font-weight: lighter;
+    color: #fff;
+}
+#regiondatadetail .rect{
+        position: absolute;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 100;
+    color: #ffffff;
+    background: #5b9bd5;
+    left: 153px;
+    height: 23px;
+    line-height: 23px;
+    transition-duration: 0.6s;
+}
+
+
+#analysis_legend{    position: absolute;
+    z-index: 4;
+    height: 25px;
+    width: 500px;
+    bottom: 0;
+    background: #f9f9f9;
+    border: 1px solid #f1f1f1;
+    border-radius: 2px;
+    margin: 5px;
+    left: 0;
+}
+
+
+#map_legend{
+    display:none;
+    position: absolute;
+    z-index: 4;
+    height: 200px;
+    width: 180px;
+    right: 20px;
+    top: 90px;
+    background: #ffffffba;
+}

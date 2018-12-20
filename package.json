@@ -1,0 +1,56 @@
+{
+  "name": "express-webpack-full-live-reload-example",
+  "version": "1.0.0",
+  "description": "A workflow with full live reload for webpack&express application.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenanpengyou/express-webpack-full-live-reload-example.git"
+  },
+  "author": "liangzhu",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev supervisor -w server,app.js -e node,js,html app",
+    "browsersync": "cross-env NODE_ENV=dev node app_browsersync",
+    "build": "webpack",
+    "production": "webpack --config webpack.production.config.js -p & cross-env NODE_ENV=production node app"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "consolidate": "^0.14.5",
+    "d3": "^4.13.0",
+    "echarts": "^3.7.2",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.3.1",
+    "kmeans-js": "^0.1.2",
+    "leaflet": "^1.3.1",
+    "ml-kmeans": "^3.0.0",
+    "ml-pca": "^2.1.0",
+    "munkres-js": "^1.2.2",
+    "node-sass": "^4.9.0",
+    "node.extend": "^2.0.0",
+    "shapefile": "^0.6.6",
+    "shp": "0.0.1",
+    "shpjs": "^3.4.2",
+    "turf": "^3.0.14"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "chokidar": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.14",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.10.0",
+    "npm-install-webpack-plugin": "^4.0.5",
+    "reload": "^1.1.1",
+    "resolve-url-loader": "^2.0.0",
+    "sass-loader": "^6.0.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.0"
+  }
+}

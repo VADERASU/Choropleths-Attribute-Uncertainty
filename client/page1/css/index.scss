@@ -1,0 +1,541 @@
+body{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+::-webkit-scrollbar {width: 10px;
+    height: 10px;
+  background-color:rgba(218, 218, 218, 0.54);  }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #bbbbbb }
+
+#logoContainer{
+	    height: 50px;
+    background: #777777;
+}
+#filename{
+  color:white
+}
+.OptionTitle{
+	padding: 10px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+}
+#DASelectContainer{
+    overflow-y: auto;
+     height: 280px;
+	float: left;
+    width: 100%;
+    padding: 5px;
+   	border: 1px dashed rgba(0, 0, 0, 0.29);
+   	border-radius: 5px;
+   	
+}
+#DASelectContainer div{
+    line-height: 24px;
+        margin: 3px;
+    padding: 3px;
+    transition-duration: 0.2s;
+    cursor:pointer;
+}
+#DASelectContainer div:hover{
+	color: #fff;
+    background-color: #337ab7;
+}
+#DASelectContainer div.selected{
+	color: #fff;
+    background-color: #337ab7;
+}
+
+.regionname{
+	font-size: 13px;
+    font-weight: 700;
+    fill: #2d2d2d;
+    pointer-events: none;
+}
+.transition{
+    transition-duration: 0.8s;
+	
+}
+
+#AreaPopup{
+	width:220px;
+
+}
+#AreaPopup svg{
+	width:220px;
+	height:160px;
+}
+#AreaPopup svg text{
+	font-size:14px;
+}
+#AreaPopup svg rect{
+	fill: #ffcf9c;
+    stroke-width: 1;
+    stroke: #ffad00;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+#AreaPopup svg .interactive_rect{
+	fill:transparent;
+	stroke-width: 0;
+    cursor: e-resize;
+    width:5px
+}
+#COviews svg{
+	pointer-events: none;
+}
+#COviews svg text{
+	font-size:14px;
+}
+#COviews svg rect{
+	fill: #ffcf9c;
+    stroke-width: 1;
+    stroke: #ffad00;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+#COviews svg .notselect{
+	fill: #d2d2d2;
+	stroke-width:0;
+}
+#COviews rect.brect{
+	pointer-events: all;
+	fill: transparent;
+    stroke-width: 0;
+    transition-duration: 0.3s;
+}
+#COviews rect.brect:hover{
+	stroke-width: 2;
+}
+#COviews svg .interactive_rect{
+	fill:transparent;
+	stroke-width: 0;
+    cursor: e-resize;
+    width:5px
+}
+
+
+#CrimeList {
+	height: 50%;
+	color:black;
+    background: rgba(255, 255, 255, 0.63);
+}
+#CrimeList label{
+    font-size: 16px;
+    margin: 0 0 4px 0;
+    }
+#CrimeList .list{
+	overflow-y: auto;
+	height:calc(100% - 36px);
+}
+#CrimeList .list .crimeevent{
+    height: 23px;
+		margin: 0 4px 4px 4px;
+    transition-duration: 0.3s;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	cursor:pointer
+	
+}
+#CrimeList .list .crimeevent:hover{
+	background:#bbbbbb
+}
+#CrimeList .list .isselected{
+	background: #f69c33;
+    color: #333;
+}
+#CrimeList .list .crimeevent div{
+    float: left;
+    padding: 0 10px;
+}
+#CrimeList .list .crimeevent .eventdate{
+    float: right;
+}
+
+
+#feature-list{
+	height: 44%;
+	overflow: auto;
+	box-shadow: 0px 3px 1px #bbbbbb;
+}
+#feature-list  ul{
+border:0
+}
+#feature-list  label{
+    background: transparent;
+	padding: 6px;
+    font-size: 14px;
+    transition-duration: 0.6s;
+}
+#feature-list  label:hover{
+	background:#bbbbbb
+}
+
+#resultval .eachimpact{
+	position: absolute;
+    margin: 5px;
+    padding: 4px 9px;
+    background: antiquewhite;
+    font-weight: 700;
+    color: #333333;	
+}    
+
+#loading{
+    height: calc(100% - 50px);
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    background: rgba(134, 134, 134, 0.63);
+    z-index: 5;
+}
+#loadingborder{
+    position: absolute;
+    left: 25%;
+    top: calc(50% - 40px);
+    height: 80px;
+    width: 50%;
+    border: 2px solid #6b6b6b;
+    border-radius: 5px;
+}
+#loadingbar{
+    position: absolute;
+    left: calc(25% + 2px);
+    top: calc(50% - 38px);
+    height: 76px;
+    width: 0.5%;
+    border-radius: 3px;
+    background: white;
+    transition-duration: 0.3s;
+}
+
+.resultContainer{
+	height: 49%;
+    width: 67%;
+    float:left;
+    right: 0;
+    
+    bottom: 0;
+}
+#Rmatrixs{   overflow: hidden;    
+    position: absolute;
+    height: calc(100% - 34px);
+    width: calc(100% - 14px);
+    margin: 2px;
+    bottom: 0;
+    transition-duration: 0.3s;
+}
+#Rmatrixs div.MX{    
+    position: absolute;
+    zoom: 1;
+    background: rgb(242, 242, 242);
+}
+#Rmatrixs div.MX label{
+    text-align: center;
+    width: 100%;
+    background: rgba(171, 171, 171, 1);
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+    padding: 5px;
+    margin:0;
+    transition-duration: 0.3s;
+}
+#Rmatrixs div.MX label.highlight{
+  background:#5b9bd5;
+}
+#Rmatrixs div.MX label.highlightfixed{
+  background:#5b9bd5;
+}
+
+
+.unfold polygon{
+  fill:#ababab;
+  cursor:pointer
+}
+.unfold polygon:hover{
+  fill:rgb(91, 155, 213)
+}
+
+#errorlist{   height: calc(100% - 397px);
+    width: calc(100% - 10px);
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #337ab7;
+    border-style: dashed;
+    margin: 5px;
+    position: absolute;
+    bottom: 50px;
+    overflow: hidden;
+}
+
+#errorlist .brect{
+	fill:transparent;
+    transition-duration: 0.4s;
+}
+
+#errorlist .brect:hover{
+	fill: rgba(140, 140, 140, 0.43)
+}
+#errorlist text{        font-size: 12px;
+    font-weight: 200;
+    fill: #333333;
+    pointer-events: none;
+}
+#errorlist .clusterchart text{ 
+    font-size: 10px;
+    font-weight: 300;
+    fill: #505050;
+    pointer-events: none;
+}
+#errorlist #Singlelist .regionline{
+    transition-duration: 0.3s;
+}
+
+#errorlist .linechartrect{
+	fill:#ffcf9c;
+	stroke-width:1;
+	stroke:#ffad00;
+    transition-duration: 0.3s;
+	cursor:pointer;
+}
+
+#errorlist .linechartrect:hover{
+	fill:#f99f40;
+	stroke-width:2;
+	stroke:#ff0049
+}
+
+#scat{ position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: #ffffffd6;
+    width: calc(50% - 10px);
+    height: 400px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #337ab7;
+    border-style: dashed;
+    margin: 5px;
+}
+
+
+#map-controls{
+	float: left;
+    width: 32%;
+    height: 49%;
+    margin:0 1% 0 0;
+    position: relative;
+}
+.changeOptionButton{
+    height: 38px;
+	float: left;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    font-size: 14px;
+	line-height: 14px;
+    background: #f3f3f3;
+
+    color: rgba(51, 51, 51, 0.48);
+    font-weight: 700;
+    cursor: pointer;
+    width: 33.3%;
+    transition-duration: 0.3s;
+}
+.changeOptionButton:hover{
+	background:#9c9c9c;
+	color: #333;
+}
+.changeOptionButtonactive{
+    background: #9c9c9c;
+	color: #333;
+}
+
+#AttrDis {
+    border-radius: 2px;
+    margin: 7px 1% 0 1%;;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	float: left;
+    width: 98%;
+    position: relative;
+}
+
+
+#RegionStatistic{   
+ width: 100%;
+    height: 336px;
+}
+	svg {
+	  font: 10px sans-serif;
+	}
+
+
+
+	#map {
+	    width: 100%;
+	    height: 100%;
+	}
+
+   	#bottom {
+   		height:50%;
+   		float:left;
+   		width:calc(34% - 0px);
+   	}
+   	
+	#file-div{
+		position: relative;
+		float:left;
+		width: calc(30% - 10px);
+		padding-left: 10px;
+		height: 50%;
+	}
+	.fileInputDiv{
+		display:block;
+		width: 100%;
+	}
+
+	.ui-resizable-se {
+		display: none !important;
+	}
+	.ui-resizable-s {
+		display: none !important;
+	}
+	#map-div .ui-resizable-e {
+		background-color: #e7e7e7 !important;
+	}
+	#scat .ui-resizable-e {
+		display: none !important;
+	}
+	
+
+	.axis text {
+	  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+	}
+
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+
+	.hull {
+		stroke-dasharray: 5,5,5;
+		stroke-linejoin: round;
+		fill-opacity: 0.3;
+	}
+
+	.dot {
+		stroke: #fff9ca;
+    	stroke-width: 1;
+    	cursor:pointer;
+    	r:6;
+    	transition-duration: 0.4s;
+    	opacity: 1;
+	}
+  .dotiscenter {
+          r: 3;
+    opacity: 0.5;
+    stroke-width: 0;
+  }
+
+	.dot:hover {
+    	stroke-width: 8;
+    	opacity: 1;
+    	r:8;
+	}
+	.dotselect{    
+    stroke-width: 1;
+    r: 6;
+    opacity: 0.9;
+    stroke: rgb(56, 56, 56);
+	}
+	.dotchanged{
+    	stroke-width: 4;
+    	r:5;
+	}
+	.dothighlight{
+    	stroke-width: 8;
+      r:8;
+    	opacity: 1;
+	}
+
+	.square {
+		stroke: black;
+		stroke-width: 1px;
+	}
+	
+	.highlighted {
+		stroke: gray;
+		stroke-width: 1px;
+	}
+
+
+	.checklist select, .checklist ul { overflow: auto; width: 100%; border: 1px solid #000; }
+   	.checklist ul { list-style-type: none; margin: 0; padding: 0; overflow-x: hidden; }
+   	.checklist li { margin: 0; padding: 0; }
+   	.checklist label { display: block; color: WindowText; background-color: Window; margin: 0; padding: 0; width: 100%; font-weight: normal;}
+   	.checklist label:hover { background-color: Highlight; color: HighlightText; }
+   	.checklist input { margin: 3px 3px 3px 4px; }
+
+   	.checklist > label:hover {
+   		background-color: Window;
+   		color: WindowText;
+   	}
+
+   	#kMeans-controls {
+   		/*float: left;*/
+   		/*padding-left: 5px;*/
+   		padding-top: 5px;
+   	}
+   	#kMeans-input {
+   		width: 50px;
+   	}
+   	
+   	#run-analysis {
+   		/*padding-left: 5px;*/
+   		margin-top: 5px;
+   	}
+
+   	#filter-border {
+		border: 1px solid #000;
+		padding: 2px 8px 4px 8px;
+   	}
+   	
+   	.d3-tip {
+	  line-height: 1;
+	  font-weight: bold;
+	  padding: 12px;
+	  background: rgba(0, 0, 0, 0.8);
+	  color: #fff;
+	  border-radius: 2px;
+	}
+
+	/* Creates a small triangle extender for the tooltip */
+	.d3-tip:after {
+	  box-sizing: border-box;
+	  display: inline;
+	  font-size: 10px;
+	  width: 100%;
+	  line-height: 1;
+	  color: rgba(0, 0, 0, 0.8);
+	  content: "\25BC";
+	  position: absolute;
+	  text-align: center;
+	}
+	
+	/* Style northward tooltips differently */
+	.d3-tip.n:after {
+	  margin: -1px 0 0 0;
+	  top: 100%;
+	  left: 0;
+	}
