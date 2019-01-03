@@ -28,8 +28,3 @@ Data can be found at:
 
 ## Ref
 Zhaosong Huang, Yafeng Lu, Elizabeth A. Mack, Wei Chen, and~Ross Maciejewski. "Exploring the Sensitivity of Choropleths under Attribute Uncertainty." IEEE Transactions on Visualization and Computer Graphics. (accepted)
-
-
-
-## Author
-Zhaosong Huang, Yafeng Lu, Elizabeth A. Mack, Wei Chen, and~Ross Maciejewski
