@@ -5,6 +5,10 @@
 
 These code is for IEEE TVCG paper 'Exploring the Sensitivity of Choropleths under Attribute Uncertainty'
 
+Node version: 10.10.0
+
+Npm version: 6.4.1
+
 ## Installing
 to develop with full live reload. use:
 ```
