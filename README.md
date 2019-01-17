@@ -26,5 +26,8 @@ Data can be found at:
 
 [USA Census Data](https://geodacenter.github.io/data-and-lab//county_election_2012_2016-variables/)
 
+## Figure Generation
+Follow Video.mp4.
+
 ## Ref
 Zhaosong Huang, Yafeng Lu, Elizabeth A. Mack, Wei Chen, and Ross Maciejewski. "Exploring the Sensitivity of Choropleths under Attribute Uncertainty." IEEE Transactions on Visualization and Computer Graphics. (accepted)
