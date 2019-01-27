@@ -52,7 +52,7 @@ The Crime data are downloaded at:
 
 The Election data are downloaded at:
 [USA Census Data](https://geodacenter.github.io/data-and-lab//county_election_2012_2016-variables/)
-And (http://www2.census.gov/geo/tiger/TIGER2017/COUNTY/)
+And [USA Shape File](http://www2.census.gov/geo/tiger/TIGER2017/COUNTY/)
 
 ## Ref
 Zhaosong Huang, Yafeng Lu, Elizabeth A. Mack, Wei Chen, and Ross Maciejewski. "Exploring the Sensitivity of Choropleths under Attribute Uncertainty." IEEE Transactions on Visualization and Computer Graphics. (accepted)
