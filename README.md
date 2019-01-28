@@ -25,7 +25,7 @@ To obtain the results we presented in the paper, please follow Video.mp4. (Choro
 
 To arrive to the state shown at video 00:31 by using the top-right button ‘File’ to load the ‘Crime Data’ and clicking the ‘Cluster Parameters’ button.
 
-To arrive to the state shown at video 00:59 by using the top-right button ‘File’ to load the ‘Election data’ and clicking the ‘Cluster Parameters’ button. Then, the user should select ‘EDU635213’ and ‘EDU685213’, set the groups number as ‘5’, and click the ‘Run K-means’ button to run the clustering algorithm.
+To arrive to the state shown at video 00:59 by using the top-right button ‘File’ to load the ‘Election’ and clicking the ‘Cluster Parameters’ button. Then, the user should select ‘EDU635213’ and ‘EDU685213’, set the groups number as ‘5’, and click the ‘Run K-means’ button to run the clustering algorithm.
 
 To arrive to the state shown at video 01:10 by using the top-right button ‘File’ to load the ‘Crime Data’ and clicking the ‘Cluster Parameters’ button. Then, the user should select ‘ROBBERY’, set the groups number as ‘6’, and click the ‘Run K-means’ button to run the clustering algorithm.
 
@@ -35,11 +35,11 @@ To arrive to the state shown at video 01:27 by using the top-right button ‘Fil
 
 ### Bivariate Classification
 
-To arrive to the state shown at video 03:00 by using the top-right button ‘File’ to load the ‘Election Data’ and clicking the ‘Cluster Parameters’ button.
+To arrive to the state shown at video 03:00 by using the top-right button ‘File’ to load the ‘Election’ and clicking the ‘Cluster Parameters’ button.
 
 ### Multivariate Classification
 
-To arrive to the state shown at video 05:15 by using the top-right button ‘File’ to load the ‘Election Data’ and clicking the ‘Cluster Parameters’ button.
+To arrive to the state shown at video 05:15 by using the top-right button ‘File’ to load the ‘Election’ and clicking the ‘Cluster Parameters’ button.
 
 ##Data
 
