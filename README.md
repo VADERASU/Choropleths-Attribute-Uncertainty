@@ -40,6 +40,7 @@ To arrive to the state shown at video 03:00 by using the top-right button ‘Fil
 ### Multivariate Classification
 
 To arrive to the state shown at video 05:15 by using the top-right button ‘File’ to load the ‘Election’ and clicking the ‘Cluster Parameters’ button.
+For this example, the analysis may take a few minutes to compute depending on your configuration.
 
 ##Data
 
